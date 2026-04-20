@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reza Oktaviandri - Wanted</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        parchment: '#e8d8b7',
+                        parchmentDark: '#d4c098',
+                        wood: '#4a2e15',
+                        woodDark: '#2e1c0d',
+                        wantedRed: '#8b0000',
+                    },
+                    fontFamily: {
+                        pirate: ['"Pirata One"', 'cursive'],
+                        body: ['"Inter"', 'sans-serif'],
+                        serif: ['"Times New Roman"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Inter:wght@400;600;700&display=swap');
+        
+        body { 
+            /* Background lautan malam / grand line */
+            background-color: #0f172a;
+            background-image: radial-gradient(circle at center, #1e293b 0%, #020617 100%);
+            color: #1a1a1a;
+        }
+        
+        .wanted-poster {
+            background-color: #e8d8b7;
+            background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+        
+        .wood-border {
+            border: 8px solid #4a2e15;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="font-body min-h-screen py-10 px-4">
+
+    <div class="max-w-4xl mx-auto space-y-10">
+
+        <header class="wanted-poster wood-border mx-auto p-6 md:p-10 relative overflow-hidden transform rotate-1 hover:rotate-0 transition-transform duration-300">
+            <div class="absolute top-2 left-2 w-4 h-4 bg-gray-800 rounded-full shadow-inner"></div>
+            <div class="absolute top-2 right-2 w-4 h-4 bg-gray-800 rounded-full shadow-inner"></div>
+            <div class="absolute bottom-2 left-2 w-4 h-4 bg-gray-800 rounded-full shadow-inner"></div>
+            <div class="absolute bottom-2 right-2 w-4 h-4 bg-gray-800 rounded-full shadow-inner"></div>
+
+            <div class="text-center border-4 border-woodDark p-4">
+                <h1 class="font-serif text-6xl md:text-8xl font-bold text-woodDark tracking-widest mb-2">WANTED</h1>
+                <p class="font-serif text-2xl md:text-3xl font-bold tracking-widest text-wood mb-6">DEAD OR ALIVE</p>
+                
+                <div class="mx-auto w-48 h-48 md:w-64 md:h-64 border-4 border-woodDark overflow-hidden mb-6 bg-white">
+                    <img src="LINK_FOTO_KAMU_DISINI" alt="Reza Oktaviandri" class="w-full h-full object-cover filter sepia-[0.3] contrast-125 grayscale-[0.2]">
+                </div>
+
+                <h2 class="font-serif text-4xl md:text-6xl font-bold text-woodDark mb-2 tracking-wider">REZA OKTAVIANDRI</h2>
+                
+                <div class="font-pirate text-4xl md:text-5xl text-woodDark mt-6 flex justify-center items-center gap-2">
+                    <i class="fa-brands fa-btc text-3xl"></i> 1,500,000,000 -
+                </div>
+                
+                <p class="font-serif text-lg font-bold mt-4 text-wood tracking-wide">"THE IT SPECIALIST"</p>
+
+                <div class="mt-8 flex flex-wrap justify-center gap-4 text-sm font-bold text-woodDark border-t-2 border-woodDark pt-4">
+                    <span class="flex items-center gap-2"><i class="fas fa-envelope"></i> rezaoktaviandre@gmail.com</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-phone-volume"></i> 081372615252</span>
+                    <span class="flex items-center gap-2"><i class="fas fa-map-location-dot"></i> Wonosobo, Jawa Tengah</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="wanted-poster p-8 rounded-lg shadow-2xl relative">
+            <h2 class="font-pirate text-4xl text-woodDark border-b-4 border-woodDark pb-2 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-scroll"></i> Gulungan Rahasia (Tentang Saya)
+            </h2>
+            <p class="text-lg text-woodDark leading-relaxed font-medium">
+                Saya adalah Sarjana Komputer lulusan Universitas Sains Al-Qur’an Wonosobo dengan keahlian di bidang IT, khususnya pemrograman (seperti pembuatan On-Premise ERP menggunakan Laravel), manajemen jaringan, dan dukungan teknis. Selain kemampuan teknis IT, saya juga memiliki kekuatan tambahan dalam desain grafis dan editing video. Saya terbiasa merancang sistem berbasis web, mengelola database, dan melakukan troubleshooting hardware/software untuk memastikan armada (perusahaan) tetap berlayar dengan lancar.
+            </p>
+        </section>
+
+        <section class="wanted-poster p-8 rounded-lg shadow-2xl">
+            <h2 class="font-pirate text-4xl text-woodDark border-b-4 border-woodDark pb-2 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-ship"></i> Logbook Pelayaran (Pengalaman)
+            </h2>
+            
+            <div class="space-y-6 relative border-l-4 border-woodDark pl-6 ml-4">
+                
+                <div class="absolute w-4 h-4 bg-wantedRed rounded-full -left-[10px] top-2 border-2 border-woodDark"></div>
+                <div class="mb-8">
+                    <div class="flex justify-between flex-col md:flex-row md:items-center mb-1">
+                        <h3 class="text-xl font-bold text-woodDark">Staff IT (Wakil Kapten IT)</h3>
+                        <span class="text-sm font-bold bg-woodDark text-parchment px-3 py-1 rounded">Nov 2025 - Sekarang</span>
+                    </div>
+                    <p class="text-wantedRed font-bold mb-3"><i class="fa-solid fa-anchor"></i> PT Indotex Lasindo Jaya</p>
+                    <ul class="list-disc list-outside ml-5 font-medium space-y-1 text-woodDark">
+                        <li><strong>Pembuatan Senjata Web:</strong> Membuat On-Premise ERP menggunakan Laravel untuk manajemen order dan WIP.</li>
+                        <li><strong>Dukungan Teknis & Troubleshoot:</strong> Memberikan solusi teknis bagi kru terkait kendala hardware, software, dan sistem.</li>
+                        <li><strong>Navigasi Jaringan & Keamanan:</strong> Mengelola konektivitas LAN/WAN, konfigurasi perangkat jaringan, serta menjaga keamanan aset data.</li>
+                        <li><strong>Pemeliharaan Aset Kapal:</strong> Instalasi, pembaruan sistem, perbaikan keras, dan manajemen inventaris.</li>
+                    </ul>
+                </div>
+
+                <div class="absolute w-4 h-4 bg-woodDark rounded-full -left-[10px] top-[240px] md:top-[180px]"></div>
+                <div class="mb-8">
+                    <div class="flex justify-between flex-col md:flex-row md:items-center mb-1">
+                        <h3 class="text-xl font-bold text-woodDark">Freelance & Live Streaming Operator</h3>
+                        <span class="text-sm font-bold bg-wood text-parchment px-3 py-1 rounded">2024</span>
+                    </div>
+                    <p class="text-wood font-bold mb-3"><i class="fa-solid fa-anchor"></i> Bawana Media</p>
+                    <ul class="list-disc list-outside ml-5 font-medium space-y-1 text-woodDark">
+                        <li>Operator live streaming dalam event Olimpiade Nasional Prisma.</li>
+                        <li>Meracik dan mengedit video dari bahan yang sudah ada untuk iklan olimpiade.</li>
+                        <li>Mencatat dan menyiapkan kebutuhan operasional event.</li>
+                    </ul>
+                </div>
+
+                <div class="absolute w-4 h-4 bg-woodDark rounded-full -left-[10px] top-[410px] md:top-[320px]"></div>
+                <div>
+                    <div class="flex justify-between flex-col md:flex-row md:items-center mb-1">
+                        <h3 class="text-xl font-bold text-woodDark">Studi Independen Bersertifikat (MSIB)</h3>
+                        <span class="text-sm font-bold bg-wood text-parchment px-3 py-1 rounded">2023</span>
+                    </div>
+                    <p class="text-wood font-bold mb-3"><i class="fa-solid fa-anchor"></i> Learning X (PT Global Investment Institusi)</p>
+                    <ul class="list-disc list-outside ml-5 font-medium space-y-1 text-woodDark">
+                        <li><strong>Frontend:</strong> Pembuatan antarmuka website responsif (HTML, CSS, JavaScript).</li>
+                        <li><strong>Backend:</strong> Merancang logika server dan API menggunakan Python (Flask).</li>
+                        <li><strong>Cloud Database:</strong> Mengelola markas data cloud menggunakan MongoDB.</li>
+                        <li><strong>Deployment:</strong> Menyelesaikan kapal utama (aplikasi web full-stack) dan meluncurkannya ke lautan online.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <section class="wanted-poster p-8 rounded-lg shadow-2xl">
+                <h2 class="font-pirate text-3xl text-woodDark border-b-4 border-woodDark pb-2 mb-6 flex items-center gap-3">
+                    <i class="fa-solid fa-book-skull"></i> Harta Karun (Pendidikan)
+                </h2>
+                <div>
+                    <h3 class="text-xl font-bold text-woodDark">Universitas Sains Al-Qur’an</h3>
+                    <p class="text-wantedRed font-bold mb-2">Sarjana Komputer, Teknik Informatika</p>
+                    <p class="font-medium text-woodDark"><i class="fa-regular fa-clock"></i> 2020 - 2025</p>
+                </div>
+            </section>
+
+            <section class="wanted-poster p-8 rounded-lg shadow-2xl">
+                <h2 class="font-pirate text-3xl text-woodDark border-b-4 border-woodDark pb-2 mb-6 flex items-center gap-3">
+                    <i class="fa-brands fa-canadian-maple-leaf"></i> Buah Iblis (Keahlian)
+                </h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-woodDark text-parchment font-bold text-sm border-2 border-woodDark">Laravel & PHP</span>
+                    <span class="px-3 py-1 bg-woodDark text-parchment font-bold text-sm border-2 border-woodDark">Python (Flask)</span>
+                    <span class="px-3 py-1 bg-woodDark text-parchment font-bold text-sm border-2 border-woodDark">HTML, CSS, JS</span>
+                    <span class="px-3 py-1 bg-woodDark text-parchment font-bold text-sm border-2 border-woodDark">MongoDB & MySQL</span>
+                    <span class="px-3 py-1 bg-wood text-parchment font-bold text-sm border-2 border-wood">Jaringan LAN/WAN</span>
+                    <span class="px-3 py-1 bg-wood text-parchment font-bold text-sm border-2 border-wood">Hardware Troubleshoot</span>
+                    <span class="px-3 py-1 bg-wood text-parchment font-bold text-sm border-2 border-wood">Design & Video Editing</span>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <footer class="text-center mt-12 pb-8">
+        <p class="text-gray-400 font-medium">
+            <i class="fa-solid fa-skull-crossbones mr-2"></i> 2026 Reza Oktaviandri. Berlayar Menuju Grand Line.
+        </p>
+    </footer>
+
+</body>
+</html>
